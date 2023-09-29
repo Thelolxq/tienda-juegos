@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 
 function Lista() {
-  const [mostrarMenu, setMostrarMenu]=useState(false);
+  const [mostrarMenu, setMostrarMenu]=useState(false)
+
   const refVentana=useRef(null);
 
   useEffect(() => {
@@ -17,9 +18,6 @@ function Lista() {
           document.removeEventListener('mousedown', handleClickOutside);
         };
       }, []);
-
-
-   
   return (
     <>
     <Listas>
